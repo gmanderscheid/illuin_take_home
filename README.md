@@ -4,10 +4,13 @@ Once vectorisation is done a cosine similarity between the question and all the 
 The algorithm will output the context that has the highest cosine value with the question vector. 
 
 In order to build the image from the Dockerfile : 
+
 docker image build . -t squad_predict_image 
 
 In order to run the container and run predict.py file : 
+
 docker run --name illuin_predict_SQUAD -it -p 80:80 squad_predict_image bash
+
 
 > python3 predict.py 
 
